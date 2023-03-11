@@ -9,7 +9,7 @@ This program just copies "/map surf_mapname" to your keyboard when you press "1"
 
 Install python3
 
-Clone the repo
+Clone the repo or download as zip, and unzip
 
 `pip install -r requirements.txt`
 
