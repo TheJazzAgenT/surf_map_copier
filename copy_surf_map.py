@@ -1,6 +1,14 @@
 import pyperclip as pc
 import keyboard as kb
 
+
+# Edit these to be the hotkeys you want
+#-------------------------------------
+NEXT_MAP_HOTKEY = 'ctrl+1'
+PREVIOUS_MAP_HOTKEY = 'ctrl+2'
+RESTART_HOTKEY = 'ctrl+backspace'
+#-------------------------------------
+
 class MapCopier:
     def __init__(self):
         with open('t1_map_list.txt', 'r') as maplistfile:
@@ -20,7 +28,7 @@ class MapCopier:
 
 if __name__=='__main__':
     copier = MapCopier()
-    kb.add_hotkey('ctrl+1', copier.next_map)
-    kb.add_hotkey('ctrl+2', copier.previous_map)
-    kb.add_hotkey('ctrl+backspace', copier.restart)
+    kb.add_hotkey(NEXT_MAP_HOTKEY, copier.next_map)
+    kb.add_hotkey(PREVIOUS_MAP_HOTKEY, copier.previous_map)
+    kb.add_hotkey(RESTART_HOTKEY, copier.restart)
     kb.wait()
