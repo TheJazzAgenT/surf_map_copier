@@ -11,14 +11,16 @@ Install python3
 
 Clone the repo or download as zip, and unzip
 
-`pip install -r requirements.txt`
+`$ pip install -r requirements.txt`
 
 ## Run
 
-`python copy_surf_map.py`
+`$ python copy_surf_map.py`
 
 Go next map: `ctrl + 1`
 
 Go previous map: `ctrl + 2`
 
 Restart: `ctrl + backspace`
+
+Or, edit the appropriate section of copy_surf_map.py to set your own hotkeys
