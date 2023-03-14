@@ -16,3 +16,9 @@ Clone the repo or download as zip, and unzip
 ## Run
 
 `python copy_surf_map.py`
+
+Go next map: `ctrl + 1`
+
+Go previous map: `ctrl + 2`
+
+Restart: `ctrl + backspace`
